@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+
+<robot xmlns:xacro = "https://www.ros.org/wiki/xacro">
+
+    <gazebo reference = "base_link">
+        <material>Gazebo/DarkGrey</material>
+        <mu  value = "100.0" />
+        <mu2 value = "0.3" />
+    </gazebo>
+    
+    <gazebo reference = "cylinder_link">
+        <material>Gazebo/Black</material>
+    </gazebo>
+
+    <gazebo reference = "base_link2">
+        <material>Gazebo/DarkGrey</material>
+    </gazebo>
+
+    <gazebo reference = "base">
+        <material>Gazebo/Grey</material>
+    </gazebo>
+    
+    <gazebo reference = "link_1">
+        <material>Gazebo/White</material>
+    </gazebo>
+    
+    <gazebo reference = "link_2">
+        <material>Gazebo/White</material>
+    </gazebo>
+    
+    <gazebo reference = "link_3">
+        <material>Gazebo/White</material>
+    </gazebo>
+    
+    <gazebo reference = "link_4">
+        <material>Gazebo/White</material>
+    </gazebo>
+    
+    <gazebo reference = "link_5">
+        <material>Gazebo/White</material>
+    </gazebo>
+    
+    <gazebo reference = "link_6">
+        <material>Gazebo/White</material>
+    </gazebo>
+
+    <gazebo reference = "tapa_link1">
+        <material>Gazebo/Black</material>
+    </gazebo>
+    
+    <gazebo reference = "tapa1_link2">
+        <material>Gazebo/Black</material>
+    </gazebo>
+    
+    <gazebo reference = "tapa2_link2">
+        <material>Gazebo/Black</material>
+    </gazebo>
+    
+    <gazebo reference = "tapa1_link3">
+        <material>Gazebo/Black</material>
+    </gazebo>
+    
+    <gazebo reference = "tapa1_link4">
+        <material>Gazebo/Black</material>
+    </gazebo>
+    
+    <gazebo reference = "tapa2_link4">
+        <material>Gazebo/Black</material>
+    </gazebo>
+
+    <gazebo reference = "tapa1_link5">
+        <material>Gazebo/Black</material>
+    </gazebo>
+
+</robot>

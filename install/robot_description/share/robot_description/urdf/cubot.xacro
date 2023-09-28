@@ -1,0 +1,528 @@
+<?xml version="1.0"?>
+
+<robot xmlns:xacro = "https://www.ros.org/wiki/xacro">
+        
+    <link name = "base_footprint" />
+
+    <link name="base_link">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://robot_description/meshes/base_link.STL" />
+            </geometry>
+            <material name="base_color" />
+        </visual>
+        <inertial>
+            <origin xyz="-1.10267350805771E-12 1.45548156860187E-11 0.0185781258006132" rpy="0 0 0" />
+            <mass value="79.3842790497946" />
+            <inertia ixx="4.00362178956405" ixy="-1.91188561568803E-06" ixz="3.87272485057835E-12"
+                     iyy="1.03087893550912" iyz="-5.48477794489235E-11"
+                     izz="4.99667270923305" />
+        </inertial>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://robot_description/meshes/base_link.STL" />
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="cylinder_link">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://robot_description/meshes/cylinder_link.STL" />
+            </geometry>
+            <material name="cylinder_color" />
+        </visual>
+        <inertial>
+            <origin xyz="-1.11022302462516E-16 0 2.42861286636753E-17" rpy="0 0 0" />
+            <mass value="61.9831151649633" />
+            <inertia ixx="3.42650356761244" ixy="4.17733831902752E-10" ixz="5.31543610028659E-07"
+                     iyy="3.42625368778769" iyz="-2.94553580269862E-09"
+                     izz="0.251813035403341" />
+        </inertial>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://robot_description/meshes/cylinder_link.STL" />
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="base_link2">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://robot_description/meshes/base_link2.STL" />
+            </geometry>
+            <material name="base_color" />
+        </visual>
+        <inertial>
+            <origin xyz="-4.98779490099022E-07 4.12488153946067E-08 -1.36094337521708E-07" rpy="0 0 0" />
+            <mass value="17.3405579805777" />
+            <inertia ixx="0.0693857935173052" ixy="-4.15812778569728E-07" ixz="-1.8472897205184E-07"
+                     iyy="0.0691498830677368" iyz="-6.72705187762533E-08"
+                     izz="0.111638289541557" />
+        </inertial>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://robot_description/meshes/base_link2.STL" />
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="base">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://robot_description/meshes/base.STL" />
+            </geometry>
+            <material name="base_color" />
+        </visual>
+        <inertial>
+            <origin xyz="0.00272736311403243 -0.000318973989885091 0.0262857450146657" rpy="0 0 0" />
+            <mass value="2.39038130941801" />
+            <inertia ixx="0.00812861332272554" ixy="-4.70652353452538E-05" ixz="0.000105270877542648"
+                     iyy="0.00725251859659414" iyz="-1.05216511344618E-05"
+                     izz="0.0140531329173185" />
+        </inertial>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://robot_description/meshes/base.STL" />
+            </geometry>
+        </collision>
+    </link>
+    
+    <link name="link_1">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://robot_description/meshes/link_1.STL" />
+            </geometry>
+            <material name="link_color" />
+        </visual>
+        <inertial>
+            <origin xyz="-9.5930146648604E-05 -0.0284863485005264 0.143718312451907" rpy="0 0 0" />
+            <mass value="13.2951060206365" />
+            <inertia ixx="0.11569468384613"  ixy="-6.49030444573711E-05" ixz="9.72824722491766E-05"
+                     iyy="0.103781904743927" iyz="0.0260697819910889"
+                     izz="0.0525447624322488" />
+        </inertial>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://robot_description/meshes/link_1.STL" />
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="tapa_link1">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://robot_description/meshes/tapa_link1.STL" />
+            </geometry>
+            <material name="tapa_color" />
+        </visual>
+        <inertial>
+            <origin xyz="2.64013488421311E-06 2.8897162859462E-06 -3.913914219833E-06" rpy="0 0 0" />
+            <mass value="0.253605548814056" />
+            <inertia ixx="0.000622496811062694" ixy="1.34787739817085E-06" ixz="6.92132237613598E-07"
+                     iyy="0.000956154910219405" iyz="0.000182501695526524"
+                     izz="0.000617517488238175" />
+        </inertial>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://robot_description/meshes/tapa_link1.STL" />
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="link_2">
+        <inertial>
+            <origin xyz="-0.211407081662651 7.18135667171493E-06 0.0384391177875234" rpy="0 0 0" />
+            <mass value="4.16925718981076" />
+            <inertia ixx="0.0108683744943863" ixy="2.1021916437197E-05" ixz="-0.00448323011526969"
+                     iyy="0.118115165198652" iyz="1.22725725644987E-06"
+                     izz="0.121902089014938" />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://robot_description/meshes/link_2.STL" />
+            </geometry>
+            <material name="link_color" />
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://robot_description/meshes/link_2.STL" />
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="tapa1_link2">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://robot_description/meshes/tapa1_link2.STL" />
+            </geometry>
+            <material name="tapa_color" />
+        </visual>
+        <inertial>
+            <origin xyz="2.47650788764986E-11 -6.2501392950054E-12 -1.02495789633394E-12" rpy="0 0 0" />
+            <mass value="0.135827890069284" />
+            <inertia ixx="0.000208902219696057" ixy="7.07488938854638E-07" ixz="-9.78702432513944E-12"
+                     iyy="0.00038467670051538" iyz="2.06532826974994E-14"
+                     izz="0.000213978789427341" />
+        </inertial>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://robot_description/meshes/tapa1_link2.STL" />
+            </geometry>
+        </collision>
+    </link>
+
+   <link name="tapa2_link2">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://robot_description/meshes/tapa2_link2.STL" />
+            </geometry>
+            <material name="tapa_color" />
+        </visual>
+        <inertial>
+            <origin xyz="2.32163177571465E-11 -4.65849581132716E-13 -6.97220059464598E-13" rpy="0 0 0" />
+            <mass value="0.0904341998873574" />
+            <inertia ixx="8.83352942367115E-05" ixy="2.56863235245688E-07" ixz="-4.20384137191628E-12"
+                     iyy="0.000152151967048013" iyz="-1.201045443023E-13"
+                     izz="8.99273976019369E-05" />
+        </inertial>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://robot_description/meshes/tapa2_link2.STL" />
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="link_3">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://robot_description/meshes/link_3.STL" />
+            </geometry>
+            <material name="link_color" />
+        </visual>
+        <inertial>
+            <origin xyz="-3.0585813674322E-05 0.0546951454489053 -0.0839984732548666" rpy="0 0 0" />
+            <mass value="2.43764698986409" />
+            <inertia ixx="0.013830941278572"   ixy="-3.28330406888741E-06" ixz="-2.18915480012513E-06"
+                     iyy="0.00635285190522291" iyz="0.00338671577647053"
+                    izz="0.0120324506787071" />
+        </inertial>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://robot_description/meshes/link_3.STL" />
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="tapa1_link3">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://robot_description/meshes/tapa1_link3.STL" />
+            </geometry>
+            <material name="tapa_color" />
+        </visual>
+        <inertial>
+            <origin xyz="4.22834897045865E-06 -1.44377980448515E-06 8.28364195681885E-07" rpy="0 0 0" />
+            <mass value="0.16160332982735" />
+            <inertia ixx="0.000236804610794975" ixy="5.03977454941728E-07" ixz="-2.73334122909345E-07"
+                     iyy="0.000361171403574182" iyz="-7.00443290447097E-05"
+                     izz="0.000239816991506547" />
+        </inertial>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://robot_description/meshes/tapa1_link3.STL" />
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="link_4">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://robot_description/meshes/link_4.STL" />
+            </geometry>
+            <material name="link_color" />
+        </visual>
+        <inertial>
+            <origin xyz="0.000189492169548555 -0.0676376222459832 0.121361599762999" rpy="0 0 0" />
+            <mass value="1.91628847592935" />
+            <inertia ixx="0.0331445204581152" ixy="-9.67725293430085E-06" ixz="3.06529262055772E-05"
+                     iyy="0.0307131637518387" iyz="0.00716033571357413"
+                     izz="0.00660113459122076" />
+        </inertial>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://robot_description/meshes/link_4.STL" />
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="tapa1_link4">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://robot_description/meshes/tapa1_link4.STL" />
+            </geometry>
+            <material name="tapa_color" />
+        </visual>
+        <inertial>
+            <origin xyz="-3.65437566318683E-08 -9.95315585575196E-07 7.22278878928506E-08" rpy="0 0 0" />
+            <mass value="0.0853393329674418" />
+            <inertia ixx="7.60970540781823E-05" ixy="1.4289050251064E-08" ixz="7.07419608880847E-08"
+                     iyy="8.05781079919283E-05" iyz="1.75736930770618E-05"
+                     izz="0.000130669101840258" />
+        </inertial>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://robot_description/meshes/tapa1_link4.STL" />
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="tapa2_link4">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://robot_description/meshes/tapa2_link4.STL" />
+            </geometry>
+            <material name="tapa_color" />
+        </visual>
+        <inertial>
+            <origin xyz="2.01493322027346E-10 2.95943852757219E-10 5.0628190528812E-10" rpy="0 0 0" />
+            <mass value="0.0321690128696335" />
+            <inertia ixx="1.22943519188531E-05" ixy="4.42526012260481E-08" ixz="-4.57906422888054E-12"
+                     iyy="2.30574480828349E-05" iyz="1.04967292376554E-13"
+                     izz="1.27332048472055E-05" />
+        </inertial>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://robot_description/meshes/tapa2_link4.STL" />
+            </geometry>
+        </collision>
+    </link>
+
+   <link name="link_5">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://robot_description/meshes/link_5.STL" />
+            </geometry>
+            <material name="link_color" />
+        </visual>
+        <inertial>
+            <origin xyz="5.50259177828361E-06 0.0396051941881115 -0.0689830260858697" rpy="0 0 0" />
+            <mass value="2.80940304611407" />
+            <inertia ixx="0.00928600670000158" ixy="-6.17486843983493E-07" ixz="1.21884799876206E-06"
+                     iyy="0.00436496700640216" iyz="0.00229166419817408"
+                     izz="0.00767432775387095" />
+        </inertial>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://robot_description/meshes/link_5.STL" />
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="tapa1_link5">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://robot_description/meshes/tapa1_link5.STL" />
+            </geometry>
+            <material name="tapa_color" />
+        </visual>
+        <inertial>
+            <origin xyz="-3.52169153461368E-06 2.1470889627756E-06 1.82174527219026E-06" rpy="0 0 0" />
+            <mass value="0.0688720001836159" />
+            <inertia ixx="5.97204412935316E-05" ixy="9.08776788746088E-08" ixz="-7.94396232604714E-08"
+                     iyy="8.20704851522235E-05" iyz="-1.88985675874584E-05"
+                     izz="6.1373102537693E-05" />
+        </inertial>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://robot_description/meshes/tapa1_link5.STL" />
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="link_6">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://robot_description/meshes/link_6.STL" />
+            </geometry>
+            <material name="link_color" />
+        </visual>
+        <inertial>
+            <origin xyz="-0.00817345311980977 0.000125717975131553 0.033963854490799" rpy="0 0 0" />
+            <mass value="0.323684203736786" />
+            <inertia ixx="0.000219252001631913" ixy="5.89476147539048E-07" ixz="-6.00301835598225E-06"
+                     iyy="0.000225631897342107" iyz="2.75435003713307E-08"
+                     izz="0.000378270497234932" />
+            </inertial>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://robot_description/meshes/link_6.STL" />
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name = "base_joint" type = "fixed">
+        <parent link = "base_footprint" />
+        <child  link = "base_link" />
+        <origin xyz = "0 0 0" rpy="0 0 0" />
+    </joint>
+
+    <joint name="cylinder_joint" type="fixed">
+        <origin xyz="0 0 0.43" rpy="0 0 0" />
+        <parent link="base_link" />
+        <child link="cylinder_link" />
+        <axis xyz="0 0 0" />
+    </joint>
+
+    <joint name="base_joint2" type="fixed">
+        <origin xyz="0 0 0.40246" rpy="0 0 0" />
+        <parent link="cylinder_link" />
+        <child link="base_link2" />
+        <axis xyz="0 0 0" />
+    </joint>
+
+     <joint name="joint_base" type="fixed">
+        <origin xyz="0 0 0.038537" rpy="0 0 0" />
+        <parent link="base_link2" />
+        <child link="base" />
+        <axis xyz="0 0 0" />
+    </joint>
+
+    <joint name="joint_1" type="revolute">
+        <origin xyz="0 0 0.0475" rpy="0 0 0" />
+        <parent link="base" />
+        <child link="link_1" />
+        <axis xyz="0 0 -1" />
+        <limit lower="-3.1415" upper="3.1415" effort="50" velocity="3" />
+        <dynamics damping = "1"  friction = "1"/>
+    </joint>
+
+    <joint name="tapa_joint1" type="fixed">
+        <origin xyz="0.00024204 0.073937 0.23298" rpy="0 0 0" />
+        <parent link="link_1" />
+        <child link="tapa_link1" />
+        <axis xyz="0 0 0" />
+    </joint>
+
+    <joint name="joint_2" type="revolute">
+        <origin xyz="-0.00040893 -0.1016 0.2106" rpy="1.5748 1.5708 0" />
+        <parent link="link_1" />
+        <child link="link_2" />
+        <axis xyz="0 0 -1" />
+        <limit lower="-1.57" upper="1.57" effort="50" velocity="3" />
+        <dynamics damping = "1"  friction = "5"/>
+    </joint>
+
+    <joint name="tapa1_joint2" type="fixed">
+        <origin xyz="0 0 0.079193" rpy="-1.5708 0.0040249 1.5708" />
+        <parent link="link_2" />
+        <child link="tapa1_link2" />
+        <axis xyz="0 0 0" />
+    </joint>
+
+    <joint name="tapa2_joint2" type="fixed">
+        <origin xyz="-0.48 0 0.057407" rpy="-1.5708 0.0040249 1.5708" />
+        <parent link="link_2" />
+        <child link="tapa2_link2" />
+        <axis xyz="0 0 0" />
+    </joint>
+
+    <joint name="joint_3" type="revolute">
+        <origin xyz="-0.48 0 0.0075" rpy="0 0 1.5708" />
+        <parent link="link_2" />
+        <child link="link_3" />
+        <axis xyz="0 0 -1" />
+        <limit lower="-2.35619" upper="2.35619" effort="25" velocity="3" />
+        <dynamics damping = "1"  friction = "5"/>
+    </joint>
+
+    <joint name="tapa1_joint3" type="fixed">
+        <origin xyz="7.4277E-05 -0.015479 -0.16751" rpy="-1.5708 0.0040249 0" />
+        <parent link="link_3" />
+        <child link="tapa1_link3" />
+        <axis xyz="0 0 0" />
+    </joint>
+
+    <joint name="joint_4" type="revolute">
+        <origin xyz="-0.00045753 0.1835 -0.10874" rpy="-1.5708 0.0040249 0" />
+        <parent link="link_3" />
+        <child link="link_4" />
+        <axis xyz="0 0 -1" />
+        <limit lower="-3.14" upper="3.14" effort="25" velocity="3" />
+        <dynamics damping = "1"  friction = "5"/>
+    </joint>
+
+    <joint name="tapa1_joint4" type="fixed">
+        <origin xyz="0.00041854 -0.010128 0.033035" rpy="0 0 0" />
+        <parent link="link_4" />
+        <child link="tapa1_link4" />
+        <axis xyz="0 0 0" />
+    </joint>
+
+    <joint name="tapa2_joint4" type="fixed">
+        <origin xyz="0.00010978 -0.12093 0.3355" rpy="0 0 0" />
+        <parent link="link_4" />
+        <child link="tapa2_link4" />
+        <axis xyz="0 0 0" />
+    </joint>
+
+    <joint name="joint_5" type="revolute">
+        <origin xyz="9.6354E-05 -0.089737 0.3355" rpy="1.5708 0 -0.0040249" />
+        <parent link="link_4" />
+        <child link="link_5" />
+        <axis xyz="0 0 -1" />
+        <limit lower="-3.1415" upper="3.1415" effort="10" velocity="3" />
+        <dynamics damping = "1"  friction = "5"/>
+    </joint>
+
+    <joint name="tapa1_joint5" type="fixed">
+        <origin xyz="0 -0.011671 -0.13887" rpy="-1.5708 0.0040249 0" />
+        <parent link="link_5" />
+        <child link="tapa1_link5" />
+        <axis xyz="0 0 0" />
+    </joint>
+
+    <joint name="joint_6" type="revolute">
+        <origin xyz="0 0.11 -0.089" rpy="-1.5708 0.0040249 0" />
+        <parent link="link_5" />
+        <child link="link_6" />
+        <axis xyz="0 0 1" />
+        <limit lower="-3.1415" upper="3.1415" effort="10" velocity="3" />
+        <dynamics damping = "1"  friction = "5"/>
+    </joint>
+    
+</robot>

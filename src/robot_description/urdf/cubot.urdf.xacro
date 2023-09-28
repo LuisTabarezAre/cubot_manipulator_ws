@@ -1,0 +1,9 @@
+<?xml version ="1.0"?>
+
+<robot name = "cubot" xmlns:xacro = "https://www.ros.org/wiki/xacro">
+
+    <xacro:include filename = "common_cubot.xacro" />
+    <xacro:include filename = "cubot_gazebo.xacro" />
+    <xacro:include filename = "cubot.xacro" /> 
+
+</robot>
